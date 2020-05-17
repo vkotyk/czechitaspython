@@ -159,3 +159,30 @@ else:
 
 
 #(BONUS) Vytvoř 3 proměnné, do kterých načteš čísla od uživatele z klávesnice. Vytvoř další proměnnou, do které uložíš aritmetický průměr tří předchozích proměnných. Tento průměr zaokrouhli a vypiš uživateli slovním hodnocením, jakou známku dostal. (1 – výborný, 2 – chvalitebný, 3 – dobrý, 4 – dostatečný, 5 – nedostatečný).
+
+znamka1 = int(input("Zadejte první známku, mezi 1-5: "))
+znamka2 = int(input("Zadejte první známku, mezi 1-5: "))
+znamka3 = int(input("Zadejte první známku, mezi 1-5: "))
+
+vysledek = znamka1 + znamka2 + znamka3
+
+if round(vysledek/3,1) == 1:
+  print("Vaše známka je: Výborně")
+elif round(vysledek/3,1) == 2:
+  print("Vaše známka je: Chvalitebně")
+elif round(vysledek/3,1) == 3:
+  print("Vaše známka je: Dobře")
+elif round(vysledek/3,1) == 4:
+  print("Vaše známka je: Dostatečně")
+elif round(vysledek/3,1) == 5:
+  print("Vaše známka je: Nedostatečně")
+else:
+  print("Chybný výpočet")
+
+#šlo by také průměr zadat a spočítat v úvodu takto
+#prumer = round((znamka1 + znamka2 + znamka3) / 3)
+
+#a pak bych mohl zadat také před slovní hodnocení ještě zobrazení průměru číselně
+#print(prumer)
+
+#a zbytek už stejně..
