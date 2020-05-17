@@ -280,3 +280,8 @@ print("Faktoriál zadaného čísla je: ", faktorial)
 	#n -= 1
 
 #print("Faktoriál je: ", faktorial)
+
+def Hello(name):
+  print("Ahoj ", name)
+name = input("Zadej své jmeno v 5. pádu: ")
+Hello(name)
