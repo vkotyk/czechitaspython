@@ -242,11 +242,41 @@ heslo_zadavane = input("Zadejte heslo: ")
 
 while heslo_zadavane != heslo_overeni:
   print("Zadal jsi špatné heslo, zkus to znova.")
-  heslo_overeni = "heslo123"
   heslo_zadavane = input("Zadejte heslo: ")
 
 print("Vítej na stránce!")
 
 
-
 #(BONUS) Vytvoř obecný program pro výpočet faktoriálu.
+
+n = int(input("Zadej číslo: "))
+faktorial = 1
+
+while n !=0:
+  faktorial *= n
+  n -= 1
+
+print("Faktoriál zadaného čísla je: ", faktorial)
+
+
+#lze údajně také
+#if cislo > 0:
+	#faktorial = math.factorial(cislo)
+	#print(f"{cislo:>05}! = {faktorial:>05}")
+#else:
+	#print("Nebylo zadáno přirozené číslo.")
+#while i >= 1:
+  #faktorial = faktorial * (i)
+  #i -= 1
+#print (faktorial)
+
+
+#nebo
+#n = int(input("Zadej číslo: "))
+#faktorial = 1
+
+#while n>1:
+	#faktorial = faktorial * n
+	#n -= 1
+
+#print("Faktoriál je: ", faktorial)
