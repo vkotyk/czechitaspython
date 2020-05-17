@@ -53,16 +53,16 @@ uspesnost = randint(1, 100)
 print(uspesnost)
 
 #Vytvoř program, který načte číslo od uživatele, vynásobí ho dvěma a zase ho vypíše.
-cislo = int(input("Zadej cislo"))
+cislo = int(input("Zadej cislo "))
 print(cislo * 2)
 
-cislo = int(input("Zadej cislo"))
+cislo = int(input("Zadej cislo "))
 print("Tvoje číslo * 2 se rovná:", cislo * 2)
 
 #Vytvoř program, který vypíše text podle vzoru "Hozeno na kostce: 5", s tím, že hozené číslo se bude generovat náhodně, v intervalu 1 až 6.
 from random import randint
 
-print("Hozeno na kostce:", randint(1, 6))
+print("Hozeno na kostce: ", randint(1, 6))
 
 #Vytvoř proměnnou a přiřaď do ní číslo s desetinným rozvojem. Dále vytvoř druhou proměnnou a zaokrouhli do ní původní desetinné číslo. Obě hodnoty vypiš na obrazovku. (Hledej na Google!)
 cislo = 2.5
@@ -72,9 +72,9 @@ print("Původní číslo bylo", cislo, "po zaokrouhlení dostaneš", cislo_zaokr
 
 
 #(Bonus) Vytvoř jednoduchý program na sčítání. Požádej uživatele o první číslo výpisem jako je např. "Zadej prvni cislo:", hodnotu ulož do proměnné. b. Podobně načti druhé číslo. c. Vypiš uživateli výsledek ve formátu "5 + 8 = 40".
-cislo1 = int(input("Zadej prvni cislo"))
+cislo1 = int(input("Zadej prvni cislo: "))
 
-cislo2 = int(input("Zadej druhe cislo"))
+cislo2 = int(input("Zadej druhe cislo: "))
 
 vysledek = cislo1 + cislo2
 print(cislo1, "+", cislo2, "=", vysledek)
