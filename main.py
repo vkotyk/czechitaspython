@@ -65,19 +65,19 @@ from random import randint
 print("Hozeno na kostce: ", randint(1, 6))
 
 #Vytvoř proměnnou a přiřaď do ní číslo s desetinným rozvojem. Dále vytvoř druhou proměnnou a zaokrouhli do ní původní desetinné číslo. Obě hodnoty vypiš na obrazovku. (Hledej na Google!)
-cislo = 2.5
-cislo_zaokrouhlene = round(cislo)
+cislo_bez_zaokrouhleni = 2.5
+cislo_zaokrouhlene = round(cislo_bez_zaokrouhleni)
 
-print("Tvé původní číslo bylo", cislo, "a po zaokrouhlení dostaneš", cislo_zaokrouhlene)
+print("Tvé původní číslo bylo", cislo_bez_zaokrouhleni, "a po zaokrouhlení dostaneš", cislo_zaokrouhlene)
 
 
 #(Bonus) Vytvoř jednoduchý program na sčítání. Požádej uživatele o první číslo výpisem jako je např. "Zadej prvni cislo:", hodnotu ulož do proměnné. b. Podobně načti druhé číslo. c. Vypiš uživateli výsledek ve formátu "5 + 8 = 40".
-cislo1 = int(input("Zadej první číslo: "))
+cislo3 = int(input("Zadej první číslo: "))
 
-cislo2 = int(input("Zadej druhé číslo: "))
+cislo4 = int(input("Zadej druhé číslo: "))
 
-vysledek = cislo1 + cislo2
-print("Součet tvého prvního a druhého čísla je: ", cislo1, "+", cislo2, "=", vysledek)
+vysledek = cislo3 + cislo4
+print("Součet tvého prvního a druhého čísla je: ", cislo3, "+", cislo4, "=", vysledek)
 
 #Podmínky
 #if výraz: 
@@ -95,10 +95,11 @@ else:
   print("Litujeme. Přístup na web je umožněn pouze dospělým osobám.")
 
 
+#tohle ještě nefunguje, musím odladit
+
 #vek = 20
 #kraj = praha
 
-#tohle ještě nefunguje, musím odladit
 #if vek >= 18:
   #print("Vítejte na e-shopu s alkoholem")
   #if kraj == "morava":
@@ -115,3 +116,46 @@ else:
   #print("cislo je nezaporne") 
 #else:
   #print("je mezi") 
+
+#Vytvoř proměnnou, do které vložíš výsledek z generátoru náhodných čísel. Vypiš hodnotu této proměnné. Pokud její hodnota bude větší než 0.5, vypiš text "Cislo je vetsi nez 0.5".
+from random import random
+
+nahodne_cislo = random()
+print ("Vygenerované číslo je: ", nahodne_cislo)
+if nahodne_cislo > 0.5:
+  print("Toto vygenerované číslo je větší než 0.5")
+else:
+  print("Toto vygenerované číslo je menší než 0.5")
+
+#Vytvoř proměnnou, do které načteš číslo od uživatele z klávesnice. Pokud je hodnota této proměnné větší než 100, vypiš "Cislo je vetsi nez 100". A pokud je hodnota této proměnné menší než nula, vypiš "Cislo je zaporne".
+cislo_od_uzivatele = int(input("Zadejte libovolné číslo: "))
+
+if cislo_od_uzivatele > 100:
+  print("Toto zadané číslo je větší než 100.")
+elif cislo_od_uzivatele < 0:
+   print("Toto zadané číslo je záporné.")
+else:
+  print("Toto zadané číslo je v rozsahu 0-100.")
+
+
+#Vytvoř 2 proměnné. Do jedné ulož nějaké heslo (jako text) a do druhé vstup od uživatele. Pokud se hodnota zadaná uživatelem bude rovnat heslu v proměnné, tak vypiš "přihlášen", v opačném případě "přístup zamítnut".
+
+spravne_heslo = "heslo123"
+zadane_heslo = input("Zadejte heslo: ")
+
+if zadane_heslo == spravne_heslo:
+  print("Jste přihlášeni!")
+else:
+  print ("Přístup zamítnut.")
+
+#Vytvoř proměnnou, do které uložíš číslo zadané uživatelem. Pomocí podmínky zjisti, jestli je číslo liché nebo sudé. (využij zbytek po dělení - %)
+
+cislo_zadane = int(input("Zadejte libovolné číslo pro ověření, zda je sudé nebo liché: "))
+
+if  (cislo_zadane % 2) == 0:
+  print("Toto zadané číslo je sudé.")
+else:
+   print("Toto zadané číslo je liché.")
+
+
+#(BONUS) Vytvoř 3 proměnné, do kterých načteš čísla od uživatele z klávesnice. Vytvoř další proměnnou, do které uložíš aritmetický průměr tří předchozích proměnných. Tento průměr zaokrouhli a vypiš uživateli slovním hodnocením, jakou známku dostal. (1 – výborný, 2 – chvalitebný, 3 – dobrý, 4 – dostatečný, 5 – nedostatečný).
