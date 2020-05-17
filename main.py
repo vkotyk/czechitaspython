@@ -78,3 +78,40 @@ cislo2 = int(input("Zadej druhé číslo: "))
 
 vysledek = cislo1 + cislo2
 print("Součet tvého prvního a druhého čísla je: ", cislo1, "+", cislo2, "=", vysledek)
+
+#Podmínky
+#if výraz: 
+  #příkaz (pravdivá větev, minimálně tato musít být, pokud nikdy nenabyde negativního stavu nikdy, tak stačí pravdivá větev)
+  #příkaz
+#else:
+  #příkaz (pokud je nepravdivý)
+  #příkaz
+
+vek = int(input("Vítejte na e-shopu s alkoholem. Pro přístup na web, zadejte svůj věk: "))
+
+if vek >= 18:
+  print("Vítejte, vyberte si z naší široké nabídky v levém menu.")
+else:
+  print("Litujeme. Přístup na web je umožněn pouze dospělým osobám.")
+
+
+#vek = 20
+#kraj = praha
+
+#tohle ještě nefunguje, musím odladit
+#if vek >= 18:
+  #print("Vítejte na e-shopu s alkoholem")
+  #if kraj == "morava":
+      #print("daj si slivovicu")
+  #else:
+      #print("dej si prosecco")
+#else:
+  #print("Litujeme. Přístup na web je umožněn pouze dospělým osobám.")
+
+#Elif ukázka
+#if cislo > 100:
+  #print("cislo je vetsi nez 100") 
+#elif cislo < 0:
+  #print("cislo je nezaporne") 
+#else:
+  #print("je mezi") 
