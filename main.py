@@ -186,3 +186,67 @@ else:
 #print(prumer)
 
 #a zbytek už stejně..
+
+#Cyklus - while
+#print("Knock")
+#print("Knock")
+#print("Knock")
+#print("Penny!")
+
+i = 1
+
+while i <= 3:
+  print("Knock")
+  i += 1
+
+print("Penny")
+
+#Vytvoř program, který vypíše čísla od 20 do 1.
+
+i = 20
+
+while i > 0:
+  print(i)
+  i -= 1
+
+#Vytvoř program, který pomocí cyklu for/while vypíše 5x Kralik
+
+i = 1
+
+while i <= 5:
+  print("Králík")
+  i += 1
+
+#verze s for
+
+print("for cyklus:")
+for i in range(5):
+  print("Králík")
+
+#Vytvoř jednoduchý program, který bude virtuálně házet kostkou, dokud mu nepadne 6. Každý hod vypíše na obrazovku.
+
+from random import randint
+hozeni = randint(1, 6)
+
+while hozeni != 6:
+ print(hozeni)
+ hozeni = randint(1, 6)
+  
+print(hozeni)
+
+
+#Vytvoř si proměnnou a ulož do ní nějaké heslo. Potom požádej uživatele, aby heslo zadal. Nech uživatele heslo zadávat do doby, než zadá správné heslo. Pokud zadá špatné heslo, vypiš mu pomocí printu „Zadal jsi špatné heslo, zkus to znova“. Když zadá správné heslo, vypiš mu pomocí printu „Vítej na stránce.“
+
+heslo_overeni = "heslo123"
+heslo_zadavane = input("Zadejte heslo: ")
+
+while heslo_zadavane != heslo_overeni:
+  print("Zadal jsi špatné heslo, zkus to znova.")
+  heslo_overeni = "heslo123"
+  heslo_zadavane = input("Zadejte heslo: ")
+
+print("Vítej na stránce!")
+
+
+
+#(BONUS) Vytvoř obecný program pro výpočet faktoriálu.
