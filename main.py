@@ -3,9 +3,10 @@ jmeno = "Jan Novák"
 vek = 20
 print("Jmenuji se", jmeno, "a je mi", vek, "let")
 #Vytvoř dvě číselné proměnné a pak jednu další, ve které bude součet hodnot z předchozích dvou proměnných. Výsledek vypiš na obrazovku.
-int = 10
-int = 8
-print(int, "+", int)
+cisilko1 = 10
+cisilko2 = 8
+soucet = cisilko1 + cisilko2
+print(soucet)
 #Vytvoř proměnné cislo1 a cislo2. Do konzole vypiš jejich součet, součin, rozdíl a podíl, ve formátu "1 + 1 = 2".
 cislo1 = 24
 cislo2 = 8
